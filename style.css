@@ -1,0 +1,88 @@
+body{
+    background: linear-gradient(to right, red, rgb(0, 255, 55));
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font: 600 3.5em 'Raleway', sans-serif;
+    color: rgba(255, 255, 255, 0.76);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+}
+
+h2{
+    font: 600 1.5em 'Raleway', sans-serif;
+    color: rgba(255, 255, 255, 0.76);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+}
+h3{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    font: 900 1em 'Raleway', sans-serif;
+    color: rgba(255, 255, 255, 0.76);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+h3:hover{
+    background-color: rgba(0, 0, 0, 0.705);
+    color: rgba(255, 252, 252, 0.664);
+}
+h3::selection{
+    background-color: rgba(255, 255, 255, 0.76);
+    color: rgba(0, 0, 0, 0.705);
+}
+
+button{
+    padding: 20px;
+    font: 900 1em 'Raleway', sans-serif;
+    background-color: rgba(0, 0, 0, .5);
+    border: none;
+    color: rgba(255, 255, 255, 0.76);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+button:hover{
+    background-color: rgba(0, 0, 0, 0.705);
+    color: rgba(255, 252, 252, 0.664);
+}
+
+.inputs{
+    display: flex;
+    gap: 10px;
+    width: 100vw;
+    justify-content: center;
+    
+}
+input[type=color]{
+    background-color: rgba(0, 0, 0, .5);
+    border: none;
+    width: 7.5%;
+    border-radius: 5px;
+}
+
+.arrow{
+animation: arrowBounce 1s infinite alternate;
+}
+
+@keyframes arrowBounce {
+
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px) scale(1.5);
+    }
+}
